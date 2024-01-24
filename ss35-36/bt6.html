@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      Studnet id<input id="id" type="text" /><br /><br />
+      Student Name<input id="name" type="text" /><br />
+      Age
+      <input id="age" type="text" /><br />
+      Phone
+      <input id="phone" type="text" placeholder="+98" /><br />
+      Email
+      <input id="email" type="text" />
+      <button onclick="check()" id="check">Check</button>
+    </ul>
+    <script>
+      function check() {
+        var id = document.getElementById(`id`).value;
+        var name = document.getElementById(`name`).value;
+        var age = parseInt(document.getElementById(`age`).value);
+        var phone = document.getElementById(`phone`).value;
+        var email = document.getElementById(`email`).value;
+        console.log(id.length, name.length, age, phone.length, email);
+        if (
+          id.length > 6 &&
+          name.length > 0 &&
+          age >= 18 &&
+          phone.length == 10 &&
+          email.includes("@gmail.com")
+        ) {
+          console.log("hop le");
+        } else {
+          console.log(" 0 hop le");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input" type="text" name="input">
+    <button onclick="show()" id="click">SHOW</button>
+    <div id="show"></div>
+    <script>
+        
+        function show(){
+            var i = document.getElementById("input").value;
+            document.getElementById("show").innerHTML=i
+        }
+        
+    </script>
+</body>
+</html>

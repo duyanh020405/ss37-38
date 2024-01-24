@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="one" type="number">
+    +
+    <input id="two" type="number">
+    =
+    <button id="show" onclick="show()">Show</button>
+    <h1>KET QUA </h1>
+    <div id="kqq"></div>
+    <script>
+        function chot1(){
+            
+        }
+        function show(){
+            var one =parseInt(document.getElementById("one").value) ;
+            var two =parseInt(document.getElementById("two").value);
+            var kq = one+two;
+            console.log(kq);
+            document.getElementById("kqq").innerHTML=kq
+        }
+    </script>
+
+</body>
+</html>
